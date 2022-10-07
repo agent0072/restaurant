@@ -3,11 +3,19 @@ package iga.krawczyk;
 public class App {
 
     public static void main(String[] args) {
-        printlnmassage( "2022/2023");
+        String[] years = {"2022/2023","2023/2024","2023/2024", "2024/2025", "2025/2026", "LAST YEAR!!!!!"};
+
+
+        // years.length == 5
+
+        for (int i = 0; i < years.length; i++) {
+            printlnMassage(years[i]);
+            System.out.println(i);
+        }
     }
 
 
-    static void printlnmassage(String year) {
+    static void printlnMassage(String year) {
 
         System.out.println("Witajcie drodzy klienci");
         System.out.println("w roku " + year);
